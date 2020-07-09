@@ -7,6 +7,7 @@ import "./App.css";
 import MyForm from "./MyForm";
 import CounterReducer from "./CounterReducer";
 import ReducerSample from "./ReducerSample";
+import Paraents from "./Example/Paraents";
 
 const App = () => {
   const onClick = (name: string) => {
@@ -18,16 +19,12 @@ const App = () => {
   };
   let message: string[] = ["hello", "world"];
 
-  console.log(message.push("1"));
-  console.log(message);
   let mightBeUndefined: string | undefined = undefined;
-  console.log(mightBeUndefined);
   let Obj: {} = { key: "value", big: "parm" };
   let Arr: string[] = ["asd", "fd"];
-  console.log(Obj);
-  console.log(Arr);
   return (
     <div className="App">
+      <Paraents />
       {/* <Greeting name="영준" onClick={onClick} /> */}
       <hr />
       {/* <Test /> */}
